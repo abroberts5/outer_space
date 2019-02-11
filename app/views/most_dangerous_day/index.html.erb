@@ -1,0 +1,9 @@
+Most Dangerous Day
+<%= @most_dangerous_day.search_dates[0] + " - " + @most_dangerous_day.search_dates[1] %>
+
+<div class="output">
+<%= @most_dangerous_day.result_day %>
+<% @most_dangerous_day.dangerous_asteroids.each do |asteroid| %>
+  Name: <%= asteroid.name %>
+<% end %>
+</div>
